@@ -3,13 +3,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
+    min-inline-size: 375px;
+    max-inline-size: 1440px;
+    margin: 0 auto;
 }
 
 h1,
@@ -19,24 +19,55 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+    margin: 0;
+    font-family: var(--page__font, sans-serif);
+}
+
+.page {
+    max-width: 1024px;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 picture {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 button,
 a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+    color: currentColor;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.page__text {
+    line-height: var(--page__text_line-height, 1.4625rem);
+    font-size: var(--page__text_font-size, 1.125rem);
+}
+
+.page__title {
+    line-height: var(--page__title_line-height, clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem));
+    font-size: var(--page__title_font-size, clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem));
+    color: var(--page__title-color, #DB00FF);
+    text-shadow: 4px 4px 0 var(--page__text_shadow-color, #FF0070);
+}
+
+.page__accent {
+    background-color: var(--page__accent-color, #FF0070);
+    font-weight: var(--page__title_font-weight, 700);
+}
+
+.text__subtitle {
+    background-color: var(--page__accent-color, #FF0070);
+    font-weight: var(--page__text_font-weight, 400);
+}
+
+.section__text {
+    color: var(--page__text-color, #F1B2CE);
 }
