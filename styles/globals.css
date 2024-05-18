@@ -20,7 +20,7 @@ h5,
 h6,
 p {
     margin: 0;
-    font-family: var(--page__font, sans-serif);
+    font-family: var(--page__font), sans-serif;
 }
 
 .page {
@@ -61,11 +61,13 @@ a {
 .page__accent {
     background-color: var(--page__accent-color, #FF0070);
     font-weight: var(--page__title_font-weight, 700);
+    color: var(--text__title-color, #000028);
 }
 
 .text__subtitle {
     background-color: var(--page__accent-color, #FF0070);
     font-weight: var(--page__text_font-weight, 400);
+    color: var(--text__title-color, #000028);
 }
 
 .section__text {
